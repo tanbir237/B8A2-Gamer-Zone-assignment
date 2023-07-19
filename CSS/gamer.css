@@ -307,13 +307,23 @@ footer {
 
 }
 
-.copy-rights {
+.Terms {
 
     display: flex;
     justify-content: center;
     gap: 50px;
     color: rgba(255, 255, 255, 0.60);
     padding-bottom: 130px;
+}
+
+.copy-rights{
+    color: rgba(255, 255, 255, 0.60);
+text-align: center;
+
+font-size: 1rem;
+
+font-weight: 500;
+
 }
 
 
@@ -354,19 +364,25 @@ footer {
         bottom: 100px;
         right: 15px;
     }
-    .games-menu-1{
+    .games-menu-1,.games-menu-2{
         
         display: grid;
         grid-template-columns: repeat(2,1fr);
         padding: 0px;
         gap: 0px;
+
         
     }
 
-    .many-games-1{
+    .many-games-1,.many-games-2,.social{
         margin-top: 0px;
         padding: 5px;
         gap: 5px;
+        margin-bottom: 0px;
+    }
+    .footer-logo,.details,.Terms,.Terms{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
     }
     
 }
