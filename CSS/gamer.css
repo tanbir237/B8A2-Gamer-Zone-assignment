@@ -315,3 +315,59 @@ footer {
     color: rgba(255, 255, 255, 0.60);
     padding-bottom: 130px;
 }
+
+
+/* Responsive Style */
+
+@media screen and (max-width:576px) {
+    .navigation-bar,.nav-list{
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .banner{
+        flex-direction: column;
+    }
+    .img-1{
+        width: 100%;
+        margin-top: 0px;
+    }
+
+    .games{
+        flex-direction: column;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    .play-instant{
+        flex-direction: column;
+        margin-top: 0px;
+    }
+    .img-2 {
+
+        width: 100%;
+    }
+
+    .img-3 {
+        width: 30%;
+        position: relative;
+        bottom: 100px;
+        right: 15px;
+    }
+    .games-menu-1{
+        
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        padding: 0px;
+        gap: 0px;
+        
+    }
+
+    .many-games-1{
+        margin-top: 0px;
+        padding: 5px;
+        gap: 5px;
+    }
+    
+}
+
