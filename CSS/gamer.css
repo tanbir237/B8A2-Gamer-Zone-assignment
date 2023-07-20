@@ -384,6 +384,7 @@ padding-bottom: 100px;
 
         width: 100%;
     }
+    
 
     .img-3 {
         width: 50%;
@@ -404,6 +405,7 @@ padding-bottom: 100px;
         grid-template-columns: repeat(2,1fr);
         padding: 0px;
         gap:0px;
+        
 
         
     }
