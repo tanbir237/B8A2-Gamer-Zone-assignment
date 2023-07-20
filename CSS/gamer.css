@@ -142,9 +142,13 @@ a {
 
 .games {
     display: flex;
+    justify-content: center;
+    text-align:start;
+    
+}
 
-    margin-left: 250px;
-    margin-right: 250px;
+.games>figure>figcaption{
+    margin-top: 20px;
 }
 
 /* Play instant section style */
@@ -194,9 +198,10 @@ a {
 
 
     display: flex;
-    padding-left: 300px;
+    justify-content: center;
+    
     gap: 30px;
-
+    
     background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
 }
 
@@ -228,9 +233,9 @@ a {
 
 
     display: flex;
-    padding-left: 400px;
+    
     gap: 40px;
-
+    justify-content: center;
     background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
 }
 
@@ -313,30 +318,40 @@ footer {
     justify-content: center;
     gap: 50px;
     color: rgba(255, 255, 255, 0.60);
-    padding-bottom: 130px;
+    
 }
 
 .copy-rights{
     color: rgba(255, 255, 255, 0.60);
 text-align: center;
-
+padding-top: 0px;
 font-size: 1rem;
 
 font-weight: 500;
-
+padding-bottom: 100px;
 }
 
 
 /* Responsive Style */
 
 @media screen and (max-width:576px) {
+
+    .nav-logo{
+        margin-left: 80px;
+    }
+
     .navigation-bar,.nav-list{
         flex-direction: column;
         gap: 20px;
     }
     
     .banner{
-        flex-direction: column;
+        flex-direction: column-reverse;
+        gap: 0px;
+    }
+
+    .banner-content{
+        margin-top: 0px;
     }
     .img-1{
         width: 100%;
@@ -347,12 +362,23 @@ font-weight: 500;
         flex-direction: column;
         margin-right: 0px;
         margin-left: 0px;
+        
     }
 
     .play-instant{
         flex-direction: column;
         margin-top: 0px;
     }
+    .play-content{
+        margin-top: 40px;
+        margin-left: 0px;
+        
+    }
+
+    .play-tittle, .play-text{
+        text-align: center;
+    }
+
     .img-2 {
 
         width: 100%;
@@ -364,12 +390,15 @@ font-weight: 500;
         bottom: 100px;
         right: 15px;
     }
+    
+   
+
     .games-menu-1,.games-menu-2{
         
         display: grid;
         grid-template-columns: repeat(2,1fr);
         padding: 0px;
-        gap: 0px;
+        gap:0px;
 
         
     }
@@ -377,12 +406,25 @@ font-weight: 500;
     .many-games-1,.many-games-2,.social{
         margin-top: 0px;
         padding: 5px;
-        gap: 5px;
+        gap: 0px;
         margin-bottom: 0px;
     }
-    .footer-logo,.details,.Terms,.Terms{
+   
+    .social {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .Terms{
         display: grid;
         grid-template-columns: repeat(2,1fr);
+    }
+
+    .details{
+        gap: 20px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
     }
     
 }
